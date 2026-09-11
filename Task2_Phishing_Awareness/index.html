@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Phishing Awareness Program</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <p class="eyebrow">CYBER SECURITY</p>
+        <h1>Phishing Awareness Program</h1>
+        <p>
+          Learn to spot suspicious emails, fake login pages and fraudulent
+          websites before they trick you.
+        </p>
+      </div>
+    </header>
+    <main class="wrap">
+      <section class="grid">
+        <article class="card">
+          <h2>1. Check the sender</h2>
+          <p>
+            Look beyond the display name. Verify the complete email address and
+            watch for look-alike domains, unexpected replies and unusual
+            urgency.
+          </p>
+          <div class="example bad">
+            <b>⚠ Suspicious:</b> “Bank Support”
+            &lt;support@bank-secure-login.example&gt;
+          </div>
+        </article>
+        <article class="card">
+          <h2>2. Inspect links</h2>
+          <p>
+            Hover before clicking. A link that displays one destination but
+            points to another is a major warning sign.
+          </p>
+          <div class="example good">
+            <b>✓ Safer habit:</b> Open the service using a bookmark or manually
+            typed official address.
+          </div>
+        </article>
+        <article class="card">
+          <h2>3. Fake login pages</h2>
+          <p>
+            Attackers copy familiar branding. Check the domain, HTTPS
+            certificate details, spelling, unexpected prompts and whether the
+            page asks for unusual information.
+          </p>
+          <div class="example bad">
+            <b>⚠ Red flag:</b> A login page hosted on an unrelated domain.
+          </div>
+        </article>
+        <article class="card">
+          <h2>4. Social engineering</h2>
+          <ul>
+            <li>Urgency and fear</li>
+            <li>Impersonation of trusted people</li>
+            <li>Fake prizes or refunds</li>
+            <li>Requests for passwords, OTPs or money</li>
+          </ul>
+        </article>
+      </section>
+      <section class="card">
+        <h2>Practical protection checklist</h2>
+        <div class="checks">
+          <label
+            ><input type="checkbox" /> Enable multi-factor
+            authentication.</label
+          ><label
+            ><input type="checkbox" /> Use a password manager and unique
+            passwords.</label
+          ><label
+            ><input type="checkbox" /> Verify unusual requests through a
+            separate channel.</label
+          ><label
+            ><input type="checkbox" /> Keep browsers, operating systems and apps
+            updated.</label
+          ><label
+            ><input type="checkbox" /> Report suspicious messages instead of
+            forwarding them.</label
+          >
+        </div>
+      </section>
+      <section class="card">
+        <h2>Mini Quiz</h2>
+        <form id="quiz">
+          <div class="q">
+            <p><b>1.</b> Which is the strongest warning sign?</p>
+            <label
+              ><input type="radio" name="q1" value="a" /> A familiar logo</label
+            ><label
+              ><input type="radio" name="q1" value="b" /> An urgent request to
+              verify credentials using an unfamiliar link</label
+            ><label
+              ><input type="radio" name="q1" value="c" /> A normal newsletter
+              you subscribed to</label
+            >
+          </div>
+          <div class="q">
+            <p>
+              <b>2.</b> What should you do with an unexpected password-reset
+              message?
+            </p>
+            <label
+              ><input type="radio" name="q2" value="a" /> Click
+              immediately</label
+            ><label
+              ><input type="radio" name="q2" value="b" /> Reply with your
+              password</label
+            ><label
+              ><input type="radio" name="q2" value="c" /> Navigate to the
+              service directly and check your account</label
+            >
+          </div>
+          <div class="q">
+            <p><b>3.</b> Which practice helps reduce phishing damage?</p>
+            <label
+              ><input type="radio" name="q3" value="a" /> Reusing one
+              password</label
+            ><label
+              ><input type="radio" name="q3" value="b" /> Multi-factor
+              authentication</label
+            ><label
+              ><input type="radio" name="q3" value="c" /> Disabling
+              updates</label
+            >
+          </div>
+          <button type="submit">Check Score</button>
+          <p id="result" role="status"></p>
+        </form>
+      </section>
+      <section class="card">
+        <h2>Case study</h2>
+        <p>
+          A finance employee receives an email claiming an invoice is overdue
+          and asks them to open a document and sign in. The sender address is
+          slightly misspelled and the link uses a different domain. The correct
+          response is to avoid the link, verify the request independently and
+          report the message.
+        </p>
+      </section>
+    </main>
+    <footer>
+      Educational content • Use authorized security awareness testing only.
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

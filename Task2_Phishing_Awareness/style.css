@@ -1,0 +1,110 @@
+:root {
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    sans-serif;
+  color: #152033;
+  background: #f5f7fb;
+  line-height: 1.55;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+header {
+  background: linear-gradient(135deg, #0b4aa2, #183c70);
+  color: #fff;
+  padding: 56px 20px;
+}
+.wrap {
+  max-width: 1000px;
+  margin: auto;
+}
+.eyebrow {
+  letter-spacing: 0.14em;
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+h1 {
+  font-size: clamp(2rem, 6vw, 4rem);
+  margin: 0.2em 0;
+}
+h2 {
+  margin-top: 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+  margin: 28px 0;
+}
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  margin: 18px 0;
+  box-shadow: 0 7px 24px #10204014;
+  border: 1px solid #e5e9f2;
+}
+.example {
+  padding: 14px;
+  border-radius: 10px;
+  margin-top: 16px;
+}
+.bad {
+  background: #fff0f0;
+  border-left: 5px solid #d33;
+}
+.good {
+  background: #effaf2;
+  border-left: 5px solid #2a9651;
+}
+label {
+  display: block;
+  margin: 10px 0;
+}
+input {
+  accent-color: #1458b8;
+  margin-right: 8px;
+}
+.checks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+button {
+  border: 0;
+  border-radius: 10px;
+  background: #1458b8;
+  color: white;
+  padding: 12px 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+button:hover {
+  filter: brightness(0.9);
+}
+#result {
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+.q {
+  padding: 14px 0;
+  border-top: 1px solid #e7eaf0;
+}
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #637089;
+}
+@media (max-width: 600px) {
+  header {
+    padding: 38px 16px;
+  }
+  .card {
+    padding: 18px;
+  }
+}
